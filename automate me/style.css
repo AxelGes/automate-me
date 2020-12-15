@@ -1,0 +1,270 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navBar{
+    height: 100px;
+}
+
+.navBarInner{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageLogo{
+    width: 90px;
+    height: 40px;
+    background-color: #fd3a5c;
+}
+
+.navBarButtons{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.navBarBtn{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    border-bottom: 0;
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.navBarQuoteBtn{
+    margin-left: 60px;
+    background-color: #fd3a5c;
+    color: #fff;
+    line-height: normal;
+    border-radius: 19px;
+    min-width: 130px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Merriweather', serif;
+    font-size: 48px !important;
+    font-weight: 700;
+    color: #3c3c3c;
+    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+.subtitle{
+    font-size: 24px;
+    font-weight: 400;
+    color: #3c3c3c;
+}
+
+.mainQuoteBtn{
+    margin-top: 1.3em;
+    background-color: #fd3a5c;
+    color: #fff;
+    line-height: normal;
+    border-radius: 100px;
+    min-width: 185px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.noCreditRequiredTxt{
+    width: 240px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9a9a9a;
+    text-align: center;
+}
+
+.examplesContainer{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.imagePreview{
+    width: 850px;
+    height: 550px;
+    border-radius: 15px;
+    background-color: #3c3c3c;
+}
+
+.examplesTextsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-left: 50px;
+}
+
+/* pricing */
+
+.pricingBackground{
+    padding-top: 0px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 40%;
+    z-index: 0;
+    background-color: mediumslateblue;
+}
+
+.pricingInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pricingTitle{
+    font-family: 'Merriweather', serif;
+    font-size: 40px !important;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 0.15em;
+}
+
+.pricingSubtitle{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.pricingBox{
+    display: flex;
+    background-color: #fff;
+    height: 375px;
+    width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.28);
+    margin-top: 40px;
+}
+
+.pricingBoxContent{
+    display: flex;
+    flex-direction: column;
+    width: 746px;
+}
+
+.pricingBoxContentInner{
+    display: flex;
+    flex-direction: column;
+    width: 606px;
+    height: 275px;
+    margin: auto;
+}
+
+.pricingBoxTitle{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;    
+}
+
+.pricingBoxItems{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 35px;
+    color: #3c3c3c;
+}
+
+.pricingBoxItemsLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricingBoxItemsRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricingItem{
+    display: flex;
+    align-items: center;
+}
+
+.pricingItem span {
+    padding-left: 12px;
+}
+
+.pricingBoxInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    width: 254px;
+    border-radius: 0 8px 8px 0; 
+}
+
+.pricingContactUsTitle{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pricingQuoteBtn{
+    background-color: #fd3a5c;
+    color: #fff;
+    line-height: normal;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+}
