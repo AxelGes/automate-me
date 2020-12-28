@@ -1,10 +1,13 @@
-pricing
-get quote
-more things in home
+FAQS in pricing and home
+get quote form
+pricing - our service includes:
 an example
-show example better
+show example better in home
 footer
-web responsive
+how it works add gifs
+how it works - add better style
+maybe more things in home
+make responsive
 tawk, hotjar, google analytics, mailchimp
 logo, name and colors
 corporative email
