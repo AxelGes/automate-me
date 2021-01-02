@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automate Me - Pricing</title>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="example_nba.js"></script>
+</head>
+<body onload="getData()">
+
+    <div class="navBar">
+        <div class="navBarInner">
+            <a class="imageLogo" href="./index.html"></a>
+            <ul class="navBarButtons">
+                <li><a class="navBarBtn" href="./pricing.html">Pricing</a></li>
+                <li><a class="navBarBtn" href="./how_it_works.html">How it works</a></li>
+                <li><a class="navBarBtn" href="./example_nba.html">Examples</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="nbaInfoContainer">
+            <div class="nbaInfoHeader">
+                <div class="nbaLogo"></div>
+                <span class="nbaTitle">NBA</span>
+                <span class="nbaSeason">2020-21 season</span>
+            </div>
+            
+            <div class="nbaDatesContainer"></div>
+
+            <div class="nbaGames">
+                <div class="nbaGame">
+                    <div class="homeTeamContainer">
+                        <div class="teamLogo"></div>
+                        <span class="teamName">Kings</span>
+                    </div>
+
+                    <div class="gameInfoContainer">
+                        <span class="gameTime">19:00</span>
+                        <span class="gameScore">96 - 126</span>
+                    </div>
+
+                    <div class="awayTeamContainer">
+                        <span class="teamName">Rockets</span>
+                        <div class="teamLogo"></div>
+                    </div>
+                </div>
+            </div>
+
+            <span>Finished Games</span>
+
+            <div class="nbaGamesFinished">
+            </div>
+        </div>
+    </div>
+    
+    </body>
+    
+    </html>
