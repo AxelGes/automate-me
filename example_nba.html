@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8PHJ7X05E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D8PHJ7X05E');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://autotask.site -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2217038,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Mailchimp -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bc11bc10b93b1a9742623894e/ca864eba84156316288b17257.js");</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTask - NBA Example</title>
+    <link rel="autotask icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="example_nba.js"></script>
+</head>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/600d2bd6a9a34e36b96faaae/1espn6g47';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+<body onload="getData()">
+    <div id="hamburgerOpenMenu" class="hamburgerOpenMenu hidden">
+        <div class="hamburgerOpenMenuInner">
+            <div class="navBarButtonsHamburger">
+                <img width="32px" src="/assets/x.svg" class="navBarCloseBtn" onclick="toggleHamburger()"/>
+                <a class="navBarBtnHamburger" href="/pricing.html">Pricing</a>
+                <a class="navBarBtnHamburger" href="/how_it_works.html">How it works</a>
+                <a class="navBarBtnHamburger" href="/example_nba.html">Example</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navBar">
+        <div class="navBarInner">
+            <a href="/index.html"> <img src="assets/logomini_vector.svg" width="40px"> </a>
+            <ul class="navBarButtons">
+                <li>
+                    <a class="navBarBtn" href="/pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a class="navBarBtn" href="/how_it_works.html">How it works</a>
+                </li>
+                <li>
+                    <a class="navBarBtn" href="/example_nba.html">Example</a>
+                </li>
+            </ul>
+            <div id="hamburgerMenu" class="hamburgerMenu" onclick="toggleHamburger()">
+                <img src="/assets/menu.svg" alt="=">
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="nbaBigTitle">Live NBA Matchups</h2>
+        <div class="nbaInfoContainer">
+            <div class="nbaInfoHeader">
+                <div class="nbaInfoHeaderLogo">
+                    <img width="16px" height="35,51" src="https://media.api-sports.io/basketball/leagues/12.png"></img>
+                    <span class="nbaTitle">NBA</span>
+                </div>
+                <span class="nbaSeason">2020-21 season</span>
+            </div>
+            
+            <div class="nbaDateContainerTop">
+                <div class="nbaDateContainerTopInner">
+                    <img src="assets/chevron-left.svg" class="dateArrow" id="dateArrowLeftTop" onclick="dateArrowLeftClick()"/>
+                    <span id="dateText1" class="dateText"></span>
+                    <img src="assets/chevron-right.svg" class="dateArrow" id="dateArrowRightTop" onclick="dateArrowRightClick()"/>
+                </div>
+            </div>
+
+            <div class="nbaGames" id="nbaGamesYesterday" class="hidden">
+                <!-- this is filled in the JS -->
+            </div>
+
+            <div class="nbaGames" id="nbaGamesToday">
+                <!-- this is filled in the JS -->
+            </div>
+
+            <div class="nbaGames" id="nbaGamesTomorrow" class="hidden">
+                <!-- this is filled in the JS -->
+            </div>
+
+            <div class="nbaDateContainerBottom">
+                <div class="nbaDateContainerBottomInner">
+                    <img src="assets/chevron-left.svg" class="dateArrow" id="dateArrowLeftBottom" onclick="dateArrowLeftClick()"/>
+                    <span id="dateText2" class="dateText"></span>
+                    <img src="assets/chevron-right.svg" class="dateArrow" id="dateArrowRightBottom" onclick="dateArrowRightClick()"/>
+                </div>
+            </div>
+
+        </div>
+        
+        <span class="pstTimeZoneTxt">Game times are displayed using PST standard time.</span>
+
+        <span class="pstTimeZoneTxt">In this example, we are only including games from yesterday, today, and tomorrow.</span>
+
+        <div class="nbaExampleDescriptionContainer">
+
+            <h3 class="nbaExampleSubtitle">What our bots are doing here?</h3>
+
+            <div class="exampleDescriptionContainer">
+                <p>Every 20 minutes our bots are automatically bringing data from the NBA league to our servers.</p>
+
+                <p>We have many bots taking care of different tasks (like checking if everything works, cleaning obsolet information) to ensure that all data is displayed perfectly on time.</p>
+
+                <span class="exampleAchievedTitle">With this use case we achieved:</span>
+                <ul>
+                    <li><strong>Lower costs.</strong> Our provider charges us for each request made to its servers. With this system, we only call them 74 times a day, instead of 1 time for each user for each page refresh.</li>
+
+                    <br>
+
+                    <li><strong>Security.</strong> In case the data provider we are using went down, we would already have tons of games data on our servers so the user won't suffer from downtimes.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    
+    </body>
+    
+    </html>
